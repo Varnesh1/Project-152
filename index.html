@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = './car.js'></script>
+        <a-assets timeout = '1000'>
+            <a-asset-item src = './free_porsche_911_carrera_4s/scene.gltf' id = 'car' >
+            </a-asset-item>
+
+
+        </a-assets>
+      </head>
+      <body>
+<a-camera position = '0 50 50'></a-camera>
+        <a-scene background = 'color:blue'>
+
+<a-entity gltf-model = '#car' position = '0 0 0' rotation = '0 0 0' scale = '1 1 1' car></a-entity>
+
+        </a-scene>
+        
+      </body>
+</html>
